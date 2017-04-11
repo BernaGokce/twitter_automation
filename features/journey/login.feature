@@ -7,7 +7,7 @@ Feature: Twitter Demo
   Scenario: Login to Twitter
     Given I am at Twitter loginpage
     When I type username: "<username>" and password: "<password>"
-    Then I get "<username>"
+    Then I can see my account with "<username>" 
 
   Examples:
   | username   | password | error                       |
