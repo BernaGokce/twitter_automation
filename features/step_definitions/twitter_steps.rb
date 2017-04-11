@@ -27,7 +27,7 @@ When(/^I type username: "([^"]*)" and password: "([^"]*)"$/) do |username, passw
   xpath('//button')
 end
 
-Then(/^I get "([^"]*)"$/) do |username|
+Then(/^I can see my account with "([^"]*)"$/) do |username|
   sleep 5
   page.should have_content(username)
 end
